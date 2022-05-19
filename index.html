@@ -69,8 +69,8 @@
           </ul>
 
           <form class="card p-2">
+            <label for="promo-code" class="form-label">Promo Code</label>
             <div class="input-group">
-              <label for="promo-code" class="form-label">Promo Code</label>
               <input type="text" id="promo-code" class="form-control" placeholder="Promo code">
               <button type="submit" class="btn btn-secondary">Redeem</button>
             </div>
@@ -173,16 +173,14 @@
 
             <h4 class="mb-3">Payment</h4>
 
-            <div class="my-3">
-              <div class="form-check">
-                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                <label class="form-check-label" for="credit">Credit card</label>
-                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                <label class="form-check-label" for="debit">Debit card</label>
-                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                <label class="form-check-label" for="paypal">PayPal</label>
-              </div>
-            </div>
+            <fieldset class="my-3 form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Credit card</label>
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Debit card</label>
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label>
+            </fieldset>
 
             <div class="row gy-3">
               <div class="col-md-6">
